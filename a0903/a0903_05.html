@@ -25,8 +25,8 @@
       var data =' ';
       for(var i = 0 ; i<10 ; i++){
         data += ' <tr> ';
-        data += '<td>18</td>';
-        data += '<td>익스프레스 체크아웃 서비스 오픈</td> ';
+        data += '<td>' + (i+1) +'</td>';
+        data += '<td>익스프레스 체크아웃'+ (i+1) + '서비스 오픈</td> ';
         data += ' <td>포레스트</td> ';
         data += ' <td>2024-07-11</td> ';
         data +=' </tr> ';
@@ -36,6 +36,21 @@
     }
   </script>
   <div>
+    <select id="year">
+      <option>1901</option>
+      <option>1902</option>
+      <option>1093</option>
+    </select>년
+    <br/>
+    <script>    
+      var ydata = ' ';
+      for(var i = 1901 ;i<=2024 ; i++)
+      {
+        ydata +='<option>'+ i + '<option>';
+      }
+      document.getElementById("year").innerHTML=ydata;
+      console.log(ydata);
+    </script>
     <h3>뉴스</h3>
     <button onclick="boardBtn()">게시판가져오기</button>
     <table>
