@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    li{width: 120px; height: 40px; text-align: center; border: 1px solid black;
+    line-height: 40px;}
+    .guiri,.nuts{background: yellow;}
+    .sigmchi,.brocoly{background: green;}
+    #tomato{background: pink;}
+    #u01{color: blue; font-weight: 900;}
+    #u01 li:nth-child(2),#u01 li:nth-child(7){background: yellow;}
+    #u01 li:nth-child(4),#u01 li:nth-child(6){background: green;}
+    #u01 li:nth-child(3){background: pink;}
+    #u01 li :nth-last-child(){border-bottom-left-radius: 10px;}
+  </style>
+</head>
+<body>
+  <h2>건강에 좋은 식품</h2>
+  <ul id="u01">
+    <li>블루베리</li>
+    <li>귀리</li>
+    <li>토마토</li>
+    <li>시금치</li>
+    <li>적포도주</li>
+    <li>브로콜리</li>
+    <li>견과류</li>
+  </ul>
+  <h2>건강에 좋은 식품</h2>
+  <ul>
+    <li>블루베리</li>
+    <li>귀리</li>
+    <li>토마토</li>
+    <li>시금치</li>
+    <li>적포도주</li>
+    <li>브로콜리</li>
+    <li>견과류</li>
+  </ul>
+</body>
+</html>
