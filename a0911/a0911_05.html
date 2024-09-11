@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*div{width: 240px; height: 240px; border: 1px solid black; 
+    overflow: hidden; border-radius: 20px;}*/
+    /* div img{width: 240px; height: 150px; object-fit: cover; 
+      border-radius: 20px;} */
+    *{margin: 0; padding: 0;}
+    #right_fixed{border: 1px solid #111; width: 110px; position: fixed;
+    right: 0; top: 169px;}
+    #right_fixed .chat{width: 110px; height: 110px; 
+      border-bottom: 1px solid black; padding-top: 20px;}
+    #right_fixed .chat div:nth-child(1){width: 50px; height: 40px; 
+    margin: 20px auto 0;
+    background: url(images/ic_speechbubble.svg)  no-repeat;}
+    #right_fixed .chat div:nth-child(2){width: 100%; text-align: center;}
+    #right_fixed .ai_chat{width: 110px; height: 110px; 
+      border-bottom : 1px solid black; padding-top: 20px;}
+    #right_fixed .ai_chat div:nth-child(1){width: 50px; height: 40px; 
+    margin: 20px auto 0;
+    background: url(images/ico_chatai_big.svg)  no-repeat;}
+    #right_fixed .ai_chat div:nth-child(2){width: 100%; text-align: center;}
+    #right_fixed .items{font-size: 13px; text-align: center; 
+      letter-spacing: -1px; color: #333; background: #f3f3f3; 
+    width: 110px; height: 45px; }
+    #right_fixed .items span{display: inline-block; width: 12px; 
+    height: 8px; background: url(images/spr_com.png) no-repeat;
+    background-position: -80px -68px; box-sizing: border-box;
+    margin-top: 20px; margin-left: 7px;}
+    #right-fixed .top{height: 30px; text-align: center; font-size: 8px;
+    letter-spacing: -1px; background: #f3f3f3; border-top: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+  <!-- <div> -->
+    <!-- <img src="images/h01.jpg"> -->
+  <!-- </div> -->
+  <!-- <img src="images/h01.jpg"> -->
+  <div id="right_fixed">
+    <div class="chat">
+      <div></div>
+      <div>채팅상담</div>
+    </div>
+    <div class="ai_chat">
+      <div></div>
+      <div>AI 채팅상담</div>
+    </div>
+    <div class="items">최근 본 상품(0)<span></span></div>
+    <div class="top">▲TOP</div>
+  </div>
+</body>
+</html>

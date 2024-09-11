@@ -12,10 +12,12 @@
     .sigmchi,.brocoly{background: green;}
     #tomato{background: pink;}
     #u01{color: blue; font-weight: 900;}
-    #u01 li:nth-child(2),#u01 li:nth-child(7){background: yellow;}
+    #u01 li:nth-child(2),#u01 li:nth-of-type(7){background: yellow;}
     #u01 li:nth-child(4),#u01 li:nth-child(6){background: green;}
     #u01 li:nth-child(3){background: pink;}
     #u01 li :nth-last-child(){border-bottom-left-radius: 10px;}
+    #u02 li:nth-child(2),#u02 li:nth-child(7){background: yellow;}
+    #u02 li:nth-child(2n-1){font-size: 30px; font-weight: 800;}
   </style>
 </head>
 <body>
@@ -23,6 +25,7 @@
   <ul id="u01">
     <li>블루베리</li>
     <li>귀리</li>
+    <h2>태그</h2>
     <li>토마토</li>
     <li>시금치</li>
     <li>적포도주</li>
@@ -30,9 +33,10 @@
     <li>견과류</li>
   </ul>
   <h2>건강에 좋은 식품</h2>
-  <ul>
+  <ul id="u02">
     <li>블루베리</li>
     <li>귀리</li>
+    <h2>태그</h2>
     <li>토마토</li>
     <li>시금치</li>
     <li>적포도주</li>
