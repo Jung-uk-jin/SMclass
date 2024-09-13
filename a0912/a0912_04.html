@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애니메이션</title>
+  <style>
+    div{width: 100px; height: 100px ; background: skyblue;
+       border: 1px solid black; 
+      /*animation-name: chg-back; 애니메이션 함수 선언 
+      animation-duration: 3s; 지속 시간
+      animation-direction:alternate ; 방향
+      animation-timing-function: ease-in; 시간 효과
+      animation-delay: 1s; 딜레이 시간
+      animation-iteration-count:infinite ; 반복  infinite 무한대*/
+      animation: rotate 1s ;
+      animation: chg-back 1s infinite alternate;} /*한줄 요약*/
+      
+    @keyframes rotate{
+      from{
+        transform: perspective(120px) rotateX(0);
+      }
+      to{
+        transform: perspective(120px) rotateX(180);
+      }
+    }
+
+    @keyframes chg-back{
+      from{
+        background: skyblue;
+        border: 2px solid black;
+      }
+      to{
+        background: blue;
+        border: 3px solid red;
+        border-radius: 50%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div></div>
+</body>
+</html>

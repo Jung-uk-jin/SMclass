@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 이동 예제</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .main{width: 200px; height: 200px; border: 1px solid black;
+       margin: 50px auto;  }
+        /*overflow:hidden 지정된 넓이 이상으로 나가지 않음
+        perspective : 원근감*/
+    .move{transition: 0.5s all ease-in; }
+    /* .move:hover{transform: translate(0px,100px);}x축 , y축으로 이동 */
+    /* .move:hover{transform: scale(2);}크기 변형 */
+    /* .move:hover{transform: rotate(360deg); transform-origin: left top;} */
+    /* rotate(n) : n각도 만큼 회전 transform-origin : 원하는 지점에서 회전*/
+    /* .move:hover{transform: skewX(-260deg);}대각선 확대 */
+    .move:hover{transform: rotateX(100deg) scale(2); 
+      backface-visibility: visible; perspective: 100px; }
+    .move img{width: 200px; }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="move">
+      <img src="images/c01.png">
+    </div>
+  </div>
+  <hr>
+  <div class="main">
+    <div class="move">
+      <img src="images/i01.jpg">
+    </div>
+  </div>
+</body>
+</html>

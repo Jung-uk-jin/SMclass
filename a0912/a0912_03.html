@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트랜직션 예제2</title>
+  <style>
+    .d01{border: 1px solid black; width: 100px; height: 100px;
+    background: red;
+   /* transition-property: all; 속성 선택 transition-duration: 1s; 진행 시간
+   transition-timing-function:속도 효과 ease-in; transition-delay:3s ; 지연시간*/ 
+      transition: all ease-in;
+  }
+   .d01:hover{width: 200px; height: 200px; background: yellow;
+  border-radius: 50%;}
+    
+  </style>
+</head>
+<body>
+  <div class="d01"></div>
+</body>
+</html>
