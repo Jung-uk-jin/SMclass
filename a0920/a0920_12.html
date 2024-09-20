@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var arr=[30,"안녕하세요",true];
+    document.write(arr[1]+"<br>");
+    var t1=[5,30,20];
+    var t2=[6,10,20];
+    var t3=[7,5,50];
+    var time=[t1,t2,t3];
+    document.write(t1[0]+ "시" + t1[1] +"분" + t1[2]+"초<br>")
+    document.write(t2[0]+ "시" + t2[1] +"분" + t2[2]+"초<br>")
+    document.write(t3[0]+ "시" + t3[1] +"분" + t3[2]+"초<br>")
+    document.write(time[0][0]+"시"+time[0][1]+"분"+time[0][2]+"초<br>")
+    for(var i=0 ; i< 3 ; i++){
+      document.write(time[i][0]+"시"+time[i][1]+"분"+time[i][2]+"초<br>")
+    }
+  </script>
+</body>
+</html>

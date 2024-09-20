@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .red{color: red; font-size: 20px; font-weight: 600;}
+    .green{color: green; font-size: 20px; font-weight: 600;}
+    table{width: 800px; margin: 0 auto; text-align: center;}
+    th,td{width: 200px; height: 40px;}
+    th{background: #efefef;}
+    table,th,td{border:  1px solid black; border-collapse: collapse;}
+    .gray{background: gray;}
+  </style>
+  <script>
+    // for(var i=1 ; i<=100 ; i++){
+    //   if(i%2==0){
+    //     document.write("<p class=red>" + i + "</p>")
+    //   }
+    //   else{
+    //     document.write("<p class=green>" + i + "</p>")
+    //   }
+    // }
+    // document.write("<p class=red>1</p>")
+    // document.write("<p class=green>1</p>")
+  </script>
+  <table>
+
+      <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>작성일</th>
+        <th>조회수</th>
+      </tr>
+      <script>
+        for(var i=1 ; i<=20 ; i++){
+          if(i%2!=0){
+            document.write("<tr class=gray>");
+            document.write(" <td>" + i +"</td>");
+            document.write(" <td>이벤트 안내</td>");
+            document.write(" <td>2024.09.20</td>");
+            document.write(" <td>11</td>");
+            document.write("  </tr>");
+          }
+          else{
+            document.write("<tr>");
+            document.write(" <td>" + i +"</td>");
+            document.write(" <td>이벤트 안내</td>");
+            document.write(" <td>2024.09.20</td>");
+            document.write(" <td>11</td>");
+            document.write("  </tr>");
+          }
+ 
+          
+        }     
+      </script>
+         
+           
+
+  </table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function btn(event){
+      var num = document.getElementById("num").value;
+    if((num>=0 && num<=9) || (num>='a'&&num<='z') || (num>='A' &&num <='Z')){
+      alert("문자");
+    }
+    else{
+      alert("문자가 아님")
+      document.getElementById("num").value=" ";
+      document.getElementById("num").focus();
+    }
+
+  }
+
+  </script>
+  <label>숫자</label>
+  <input type="text" name="num" id="num">
+  <br>
+  <input type="button" onclick="btn(event)" value="확인">
+</body>
+</html>

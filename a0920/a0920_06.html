@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var month = Number(prompt("월을 입력하시오"));
+    var result="";
+    if(month>=3 && month<=5){
+      result="봄"
+    }
+    else if(month>=6 && month<=8){
+      result="여름"
+    }
+    else if(month>=9 && month<=11){
+      result="가을"
+    }
+    else if(month==12||month==1||month==2){
+      result="겨울"
+    }
+    document.write(result);
+  </script>
+</body>
+</html>
