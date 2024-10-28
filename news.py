@@ -17,7 +17,7 @@ data = soup.select_one("#wrap > div.rankingnews._popularWelBase._persist > div.r
 ranks = data.select("div.rankingnews_box")
 title = ranks[0].select_one("strong.rankingnews_name").text
 print(title)
-f = open("c1025/news.txt","w",encoding='utf-8')
+f = open("news.txt","w",encoding='utf-8')
 f.write(title+"\n")
 r_lists = ranks[0].select("ul.rankingnews_list>li")
 for i,r_list in enumerate(r_lists):
