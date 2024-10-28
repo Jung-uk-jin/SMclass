@@ -40,9 +40,9 @@ jobs:
         pip install pandas
         pip install lxml
 # 직접 실행
-    - name: run new file
+    - name: run my file
       run: |
-        python3.news.py
+        python3 news.py
 
 # 커밋
     - name : commit
