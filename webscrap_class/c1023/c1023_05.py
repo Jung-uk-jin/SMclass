@@ -5,8 +5,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-for i in range(5):
-  url = f"https://www.yeogi.com/domestic-accommodations?keyword=%EA%B0%95%EB%A6%89&checkIn=2024-10-23&checkOut=2024-10-24&personal=2&freeForm=false&page={i+1}"
+for i in range(2020,2024):
+  url = f"https://search.daum.net/search?w=tot&q=2023%EB%85%84%EC%98%81%ED%99%94%EC%88%9C%EC%9C%84&DA=MOR&rtmaxcoll=MOR"
   # Chrome()안에 chromedriver.exe위치 입력해줘야함
   # root에 파일이 저장되어있으면 입력하지 않아도 됨
   # broswer = webdriver.Chrome()

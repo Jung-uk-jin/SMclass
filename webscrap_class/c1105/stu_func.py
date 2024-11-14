@@ -46,7 +46,7 @@ def stu_insert():
   print("학생성적이 저장되었습니다.")
   print()
 ### 2-1.출력함수 선언
-def stu_print(*data):
+def stu_print(*data): #가변 매개변수
   ### 출력부분
   # db연결
   conn = connects()
